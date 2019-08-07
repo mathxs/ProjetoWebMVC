@@ -22,6 +22,13 @@ namespace ProjetoWebMVC.Controllers
             return View();
         }
 
+        public IActionResult Dashboard()
+        {
+            ViewData["Message"] = "Testando MVC";
+
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
